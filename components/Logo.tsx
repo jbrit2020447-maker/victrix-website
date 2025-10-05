@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './Logo.png';
+import logo from '../Assets/logo.png';
 
 interface LogoProps {
   className?: string;
@@ -8,11 +8,7 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ className = '' }) => {
   return (
     <div className={`flex items-center space-x-3 ${className}`}>
-      <img
-        src={logo}
-        alt="Victrix Logo"
-        className="w-16 h-16 object-contain"
-      />
+      <img src={logo} alt="Victrix Logo" className="w-12 h-12" />
       <div>
         <h1 className="text-3xl font-bold font-heading tracking-tight text-victrix-blue">
           victrix
