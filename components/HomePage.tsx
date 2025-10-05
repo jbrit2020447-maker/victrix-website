@@ -1,21 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from '../Components/Logo';
 
 const HomePage: React.FC = () => {
   return (
     <>
-      {/* Hero Section */}
       <section 
         className="relative bg-cover bg-center h-[calc(100vh-80px)] flex items-center text-white"
-        style={{ backgroundImage: "url('/images/clean-green-bg.jpg')" }} // Replace with your actual image in /public/images
+        style={{ backgroundImage: "url('/images/clean-green-bg.jpg')" }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         <div className="relative container mx-auto px-6 text-center z-10">
-          <img
-            src="/images/victrix-logo.png"
-            alt="Victrix Logo"
-            className="mx-auto mb-6 w-40 md:w-56 animate-fade-in-down"
-          />
+          <Logo className="mx-auto mb-6 w-40 md:w-56 animate-fade-in-down" />
           <h1 className="text-4xl md:text-6xl font-bold mb-4 animate-fade-in-down">
             Finding Sustainable Solutions For a Cleaner Tomorrow
           </h1>
@@ -31,7 +27,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Intro Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold text-green-700 mb-4">
@@ -49,7 +44,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Vision Section */}
       <section className="py-16 bg-green-50 text-center">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-green-800 mb-4">
@@ -69,7 +63,6 @@ const HomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="bg-green-700 text-white py-16 text-center">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-4">
@@ -91,4 +84,3 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
-
